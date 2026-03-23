@@ -117,44 +117,7 @@ if st.button("🚀 Proses Data"):
 
         st.markdown('<div class="section">', unsafe_allow_html=True)
         st.subheader("📋 Tabel Distribusi Frekuensi")
-        
-		# ===============================
-		# STYLE TABEL AGAR LEBIH MENARIK
-		# ===============================
-		def highlight_max(s):
-		is_max = s == s.max()
-		return ['background-color: #ff6b6b; color: white; font-weight: bold' if v else '' for v in is_max]
-
-		def color_gradient(val):
-		return f'background: linear-gradient(90deg, #667eea {val*10}%, transparent {val*10}%)'
-
-		styled_df = df.style \
-		.apply(highlight_max, subset=["FREKUENSI"]) \
-		.bar(subset=["FREKUENSI"], color='#764ba2') \
-		.set_properties(**{
-        'text-align': 'center',
-        'font-size': '16px'
-		}) \
-		.set_table_styles([
-        {
-            'selector': 'th',
-            'props': [
-                ('background', 'linear-gradient(135deg, #667eea, #764ba2)'),
-                ('color', 'white'),
-                ('font-size', '16px'),
-                ('text-align', 'center')
-            ]
-        },
-        {
-            'selector': 'td',
-            'props': [
-                ('padding', '10px')
-            ]
-        }
-		])
-
-		st.dataframe(styled_df, use_container_width=True)
-		
+        st.dataframe(df)
         st.markdown('</div>', unsafe_allow_html=True)
 
         # ===============================
