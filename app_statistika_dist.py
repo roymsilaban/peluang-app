@@ -38,7 +38,7 @@ body {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="main-title">📊 Aplikasi Statistika Modern</p>', unsafe_allow_html=True)
+st.markdown('<p class="main-title"><h3>📊 APLIKASI STATISTIKA TABEL DISTRIBUSI</h3></p>', unsafe_allow_html=True)
 
 # ===============================
 # INPUT DATA
