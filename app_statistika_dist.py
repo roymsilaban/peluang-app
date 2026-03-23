@@ -15,7 +15,7 @@ body {
     background-color: #f5f7fa;
 }
 .main-title {
-    font-size:120px;
+    font-size:220px;
     font-weight:bold;
     color:#2c3e50;
     text-align:center;
