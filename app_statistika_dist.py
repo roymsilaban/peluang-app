@@ -111,8 +111,8 @@ if st.button("🚀 Proses Data"):
             batas_bawah = batas_atas
 
         df = pd.DataFrame({
-            "Range Data": kelas,
-            "Frekuensi": frekuensi
+            "RANGE DATA": kelas,
+            "FREKUENSI": frekuensi
         })
 
         st.markdown('<div class="section">', unsafe_allow_html=True)
