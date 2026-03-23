@@ -118,18 +118,18 @@ if st.button("🚀 Proses Data"):
         st.markdown('<div class="section">', unsafe_allow_html=True)
         st.subheader("📋 Tabel Distribusi Frekuensi")
         # ===============================
-# STYLE TABEL DISTRIBUSI
-# ===============================
-def highlight_frekuensi(val):
-    return 'background-color: #ffeaa7; color: black; font-weight: bold'
+        # STYLE TABEL DISTRIBUSI
+        # ===============================
+        def highlight_frekuensi(val):
+         return 'background-color: #ffeaa7; color: black; font-weight: bold'
 
-styled_df = df.style \
-    .set_properties(**{
+        styled_df = df.style \
+        .set_properties(**{
         'background-color': '#f9f9f9',
         'color': '#2c3e50',
         'border-color': '#dddddd'
-    }) \
-    .set_table_styles([
+         }) \
+        .set_table_styles([
         {
             'selector': 'th',
             'props': [
@@ -146,16 +146,14 @@ styled_df = df.style \
                 ('padding', '10px')
             ]
         }
-    ]) \
-    .applymap(highlight_frekuensi, subset=['Frekuensi']) \
-    .hide(axis="index")
+        ]) \
+        .applymap(highlight_frekuensi, subset=['Frekuensi']) \
+        .hide(axis="index")
 
-st.markdown('<div class="section">', unsafe_allow_html=True)
-st.subheader("📋 Tabel Distribusi Frekuensi")
+        st.markdown('<div class="section">', unsafe_allow_html=True)
+        st.subheader("📋 Tabel Distribusi Frekuensi")
 
-st.dataframe(styled_df, use_container_width=True)
-
-st.markdown('</div>', unsafe_allow_html=True)
+        st.dataframe(styled_df, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
         # ===============================
