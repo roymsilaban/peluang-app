@@ -15,7 +15,7 @@ body {
     background-color: #f5f7fa;
 }
 .main-title {
-    font-size:40px;
+    font-size:80px;
     font-weight:bold;
     color:#2c3e50;
     text-align:center;
@@ -38,7 +38,7 @@ body {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="main-title"><h3>📊 APLIKASI STATISTIKA TABEL DISTRIBUSI</h3></p>', unsafe_allow_html=True)
+st.markdown('<p class="main-title">📊 APLIKASI STATISTIKA TABEL DISTRIBUSI</p>', unsafe_allow_html=True)
 
 # ===============================
 # INPUT DATA
